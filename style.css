@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 	font-weight: normal;
-	color: red;
+	color: #333;
 	font-size: 2vw;
 }
 
@@ -19,10 +19,32 @@ h1 {
 	line-height: 1.5em;
 }
 
-h1.center {
-	text-align: center;
+h2 {
+	font-size: 2rem;
+	line-height: 1.5em;
 }
 
 p {
 	line-height: 1.25rem;
+}
+
+
+.center {
+	text-align: center;
+}
+
+#footer, #header {
+	background-color: white;
+}
+
+.header-top {
+	margin-top: 36vh;
+}
+
+.footer-top {
+	margin-bottom: 40vh;
+}
+
+#content {
+	/*background-color: green;*/
 }
