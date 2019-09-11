@@ -5,6 +5,9 @@ $(document).ready(function(){
     var header = $("#header").offset().top;
     console.log("var header ="+ header);
 
+    var p1 = $("#project-1").offset().top;
+    console.log("var p1 ="+ p1);
+
     // $("#content").css({opacity: 0});
 
     $("#content").hide();
@@ -27,7 +30,7 @@ $(document).ready(function(){
             position: 'fixed', 
             top: 0, 
             textAlign: 'center', 
-            width: "calc(100% - 8rem)"           
+            width: "calc(100% - 20rem)"           
         }).removeClass("header-top");
 
         
@@ -36,7 +39,7 @@ $(document).ready(function(){
             position: 'fixed', 
             bottom: 0, 
             textAlign: 'center', 
-            width: 'calc(100% - 8rem)'
+            width: 'calc(100% - 20rem)'
           });
           $(this).fadeIn(200);
         });
@@ -53,8 +56,42 @@ $(document).ready(function(){
 
       }
 
-   
+      if ((scrollPos > p1) && (up == true)) {
+
+        console.log("p1 if");
+
+
+      } else {
+        console.log("p1 else");
+      }
 
       
     });
+
+    $("#pro-1").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#project-1").offset().top
+      }, 800);
+    }); 
+    $("#pro-2").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#project-2").offset().top
+      }, 800);
+    }); 
+    $("#pro-3").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#project-3").offset().top
+      }, 800);
+    }); 
+    $("#pro-4").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#project-4").offset().top
+      }, 800);
+    }); 
+    $("#pro-5").click(function() {
+      $('html, body').animate({
+        scrollTop: $("#project-5").offset().top
+      }, 800);
+    }); 
+
 });
