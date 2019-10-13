@@ -14,15 +14,17 @@
 			$(".project").click(function(){
 				//selected caption
 				console.log("project click");
-				var page = $("." + $(this).attr("alt"));
-				//both caption, screen, and ex button fade in
-				$(".screen").fadeIn(400);
-				page.fadeIn(400);
-				// $(".modal-ex").fadeIn(400);
-				$('body').addClass("no-scroll");
-			});
+				//var page = $("." + $(this).attr("alt"));
 
-			var slides = $(".pictures").children();
+				var url = $(this).attr("alt");
+
+				window.location.href = "file:///Users/cathy/Projects/portfolio/portfolio/sketch2/work/"+url+"/index.html";
+
+				//fade in page
+				// page.fadeIn(400);
+				// $(".modal-ex").fadeIn(400);
+				// $('body').addClass("no-scroll");
+			});
 
 		});
 
@@ -53,34 +55,6 @@
 
 		<div class="project">
 			<img src="assets/risdsign2.jpg">
-		</div>
-
-	</div>
-
-	<div class="screen"></div>
-
-	<div class="page html-output">
-
-		<div class="page-header">×</div>
-
-		<div class="slides">
-
-			<div class="left-arrow">←</div>
-
-			<div class="pictures">
-	 			<img src="assets/htmloutput2.jpg">
-	 			<img src="assets/Matsubara-Naoko-Tibetan-Monastery-A-742x1024.jpg" style="display:none;">
-	 			<img src="assets/yatra-tha.png" style="display:none;">
-	 		</div>
-
-	 		<div class="right-arrow">→</div>
- 		</div>
-
-
- 		<div class="description">
-			<p>Yatra is a Devanagari and Latin display font based on the hand-painted signage of the Mumbai Railways. It's available for free on <a href="https://fonts.google.com/specimen/Yatra+One">Google Fonts</a>. Yatra was the result of research from a Fulbright scholarship in India.</p>
-
-			<p><a href="http://cath.land/yatra-one/specimen">Check out the specimen</a></p>
 		</div>
 
 	</div>
