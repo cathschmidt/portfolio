@@ -1,0 +1,89 @@
+<html>
+<head>
+
+	<title>portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="page.css">
+
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	<script>
+
+		$(document).ready(function(){
+
+			$(".project").click(function(){
+				//selected caption
+				console.log("project click");
+				var page = $("." + $(this).attr("alt"));
+				//both caption, screen, and ex button fade in
+				$(".screen").fadeIn(400);
+				page.fadeIn(400);
+				// $(".modal-ex").fadeIn(400);
+				$('body').addClass("no-scroll");
+			});
+
+			var slides = $(".pictures").children();
+
+		});
+
+	</script>
+
+<head>
+<body>
+
+	<div id="title">catherine leigh schmidt</br>
+	<span id="pofo">portfolio 2019</span></div>
+
+	<div id="info">info</div>
+
+
+	<div id="thumbs">
+
+		<div class="project" alt="html-output">
+			<img src="assets/htmloutput2.jpg">
+		</div>
+
+		<div class="project">
+			<img src="assets/Matsubara-Naoko-Tibetan-Monastery-A-742x1024.jpg">
+		</div>
+
+		<div class="project">
+			<img src="assets/yatra-tha.png">
+		</div>
+
+		<div class="project">
+			<img src="assets/risdsign2.jpg">
+		</div>
+
+	</div>
+
+	<div class="screen"></div>
+
+	<div class="page html-output">
+
+		<div class="page-header">×</div>
+
+		<div class="slides">
+
+			<div class="left-arrow">←</div>
+
+			<div class="pictures">
+	 			<img src="assets/htmloutput2.jpg">
+	 			<img src="assets/Matsubara-Naoko-Tibetan-Monastery-A-742x1024.jpg" style="display:none;">
+	 			<img src="assets/yatra-tha.png" style="display:none;">
+	 		</div>
+
+	 		<div class="right-arrow">→</div>
+ 		</div>
+
+
+ 		<div class="description">
+			<p>Yatra is a Devanagari and Latin display font based on the hand-painted signage of the Mumbai Railways. It's available for free on <a href="https://fonts.google.com/specimen/Yatra+One">Google Fonts</a>. Yatra was the result of research from a Fulbright scholarship in India.</p>
+
+			<p><a href="http://cath.land/yatra-one/specimen">Check out the specimen</a></p>
+		</div>
+
+	</div>
+
+</body>
+</html>

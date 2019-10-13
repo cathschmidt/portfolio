@@ -1,0 +1,66 @@
+div.screen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: 100vw;
+	height: 115vh;
+	display: none;
+	background-color: #ece2cf;
+}
+
+.page {
+	width: 100vw;
+	min-height: 115vh;
+	position: absolute;
+	display: none;
+	z-index: 100;
+	background-color: #ece2cf;
+} 
+
+.no-scroll {
+	overflow: hidden;
+}
+
+.page-header {
+	width: 98vw;
+	border-bottom: 1px solid red;
+	height: 2vw;
+	font-size: 2rem;
+	line-height: 2rem;
+	padding: 1vw;
+	text-align: right;
+}
+
+
+.slides {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	width: 
+}
+
+.left-arrow, .right-arrow {
+	width: 5%;
+	border: 1px solid red;
+/*	text-align: center;*/
+	padding: 4vw;
+	font-size: 2rem;
+}
+
+.right-arrow {
+	text-align: right;
+}
+
+.pictures {
+	width: 90%;
+}
+
+.pictures img {
+	max-width: 100%;
+	height: auto;
+}
+
+.description {
+	width: 30vw;
+}
