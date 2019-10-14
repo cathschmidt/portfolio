@@ -29,6 +29,7 @@ h1 {
 	right: 1vw;
 	text-align: right;
 	font-size: 1.5rem;
+	z-index: 100;
 }
 
 #pofo {
@@ -65,5 +66,20 @@ h1 {
 a {
 	color: #5e87ff;
 } a:hover {
-	color: yellow;
+	background-color: yellow;
+	color: blue;
+}
+
+.button{
+	position: fixed;
+	padding: 1vw;
+	bottom: 0vw;
+	right: 0vw;
+	text-align: right;
+	font-size: 1.5rem;
+	color: #ee5e44;
+} .button:hover {
+	cursor: pointer;
+	background-color: yellow;
+	color: blue;
 }

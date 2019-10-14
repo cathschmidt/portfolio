@@ -39,13 +39,13 @@ h1.project-name {
 }
 
 .arrow {
-	width: 5%;
 /*	text-align: center;*/
 	padding: 4vw;
 	font-size: 2rem;
 } .arrow:hover {
 	cursor: pointer;
-	color: orange;
+	color: blue;
+	background-color: yellow;
 }
 
 .right-arrow {
