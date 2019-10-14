@@ -50,17 +50,23 @@ h1 {
 }
 
 #thumbs {
-	width: 90vw;
+	width: 92vw;
+	margin-left: 1vw;
+	margin-top: 1vw;
 }
 
 .project {
 	position: relative;
 	width: 30vw;
-	padding: 4vw;
+	padding: 3vw;
 	float: left;
+	border: 1px solid transparent;
 } .project img {
 	max-width: 100%;
 	height: auto;
+} .project:hover {
+	cursor: pointer;
+	border: 1px solid red;
 }
 
 a {
@@ -82,4 +88,40 @@ a {
 	cursor: pointer;
 	background-color: yellow;
 	color: blue;
+}
+
+@media only screen and (max-width:1000px) {
+
+	* {
+		font-size: 14px;
+	}
+
+	.project {
+		clear: both;
+		width: 60vw;
+	}
+
+	#pofo {
+		right: -10.75vw;
+	}
+}
+
+@media only screen and (max-width:600px) {
+
+	* {
+		font-size: 14px;
+	}
+
+	.project {
+		clear: both;
+		width: 80vw;
+	}
+
+	#pofo {
+		transform: none;
+		display: inline;
+		top: 0;
+		right: 0;
+	}
+
 }
