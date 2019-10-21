@@ -61,13 +61,18 @@ h1 {
 	width: 30vw;
 	padding: 3vw;
 	float: left;
+	color: #ee5e44;
 	/*border: 1px solid transparent;*/
 } .project img {
 	max-width: 100%;
 	height: auto;
 } .project:hover {
 	cursor: pointer;
-	/*border: 1px solid red;*/
+	background-color: lightyellow;
+	/*border: 1px solid #ee5e44;*/
+	color: #ee5e44;
+} .project caption {
+	color: #ee5e44;
 }
 
 a {
