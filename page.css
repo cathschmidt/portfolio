@@ -1,3 +1,38 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 1.25vw;
+	text-decoration: none;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 500;
+	line-height: 2rem;
+	background-color: #ece2cf;
+	color: #ee5e44;
+}
+
+#page-title {
+/*	font-size: 1.25rem;
+	line-height: 2.25rem;*/
+	position: fixed;
+	top: 1vw;
+	right: 1vw;
+	text-align: right;
+	font-size: 1.5rem;
+	z-index: 100;
+}
+
+#page-pofo {
+	display: block;
+	font-size: 1.5rem;
+	position: relative;
+	transform: rotate(90deg);
+	top: .7vw;
+	right: -9.5vw;
+}
+
 .page {
 	/*overflow-x: hidden;*/
 	margin-top: 5vw;
@@ -9,7 +44,6 @@
 	display: flex;
 	position: fixed;
 	top: 0;
-	background-color: #ece2cf;
 }
 
 .back {
@@ -70,4 +104,71 @@ h1.project-name {
 	margin: auto;
 	margin-top: 3vw;
 	margin-bottom: 5vw;
+}
+
+@media only screen and (max-width:1000px) {
+
+	* {
+		font-size: 14px;
+	}
+
+	.project {
+		clear: both;
+		width: 60vw;
+	}
+
+	.description {
+		width: 90vw;
+		margin: auto;
+		margin-top: 3vw;
+		margin-bottom: 5vw;
+	}
+
+	#page-title {
+		display: none;
+	}
+
+	h1.project-name {
+		padding: 3vw;
+	}
+
+	.page {
+		margin-top: 15vw;
+	}
+
+	.pictures img {
+		max-height: 100vh;
+	}
+
+	.arrow {
+		font-size: 1.5rem;
+	}
+
+}
+
+@media only screen and (max-width:700px) {
+
+	* {
+		font-size: 14px;
+	}
+
+	.project {
+		clear: both;
+		width: 80vw;
+	}
+
+	#pofo {
+		transform: none;
+		display: inline;
+		top: 0;
+		right: 0;
+	}
+
+	.description {
+		width: 90vw;
+		margin: auto;
+		margin-top: 3vw;
+		margin-bottom: 5vw;
+	}
+
 }
