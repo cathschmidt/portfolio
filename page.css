@@ -175,4 +175,8 @@ figcaption {
 		height: 60vh;
 	}
 
+	#info-d {
+		margin-top: 15vh !important;
+	}
+
 }
