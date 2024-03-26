@@ -15,7 +15,7 @@ body {
 }
 
 h1, h2 {
-	font-family: "Helvetica Now Display";
+	font-family: "Helvetica", serif;
 }
 
 h1 {
@@ -37,7 +37,7 @@ h2 {
 	line-height: 2rem;
 	padding: 0.45rem 0.25rem;
 	color: white;
-	font-size: 4rem;
+	font-size: 2rem;
 }
 
 #pofo {
@@ -95,11 +95,18 @@ p {
 	font-style: italic;
 	font-size: 1.3rem;
 	line-height: 1.5rem;
+	margin-bottom: 1.3rem;
 }
 
 p a {
 	font-style: normal;
 	font-family: "Helvetica", Arial, serif;
+}
+
+em {
+	font-style: normal;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
 }
 
 .button{
@@ -110,11 +117,14 @@ p a {
 	text-align: right;
 	font-size: 1.5rem;
 	border-bottom: none;
-	font-family: "Helvetica Now Display", Helvetica, Arial, sans-serif;
+	font-family: Helvetica, Arial, sans-serif;
 } .button:hover {
 	cursor: pointer;
 	background-color: white;
 	color: black;
+} .button:hover h1 {
+	color: black;
+	mix-blend-mode: normal;
 }
 
 .project-section {
