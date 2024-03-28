@@ -126,6 +126,7 @@ em {
 	background-color: white;
 	color: black;
 } .button:hover h1, .button:active h1 {
+	mix-blend-mode: normal;
 	color: black;
 }
 
