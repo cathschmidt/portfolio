@@ -119,13 +119,14 @@ em {
 	font-size: 1.5rem;
 	border-bottom: none;
 	font-family: Helvetica, Arial, sans-serif;
+	mix-blend-mode: difference;
 } .button:hover, .button:active {
+	mix-blend-mode: normal;
 	cursor: pointer;
 	background-color: white;
 	color: black;
 } .button:hover h1, .button:active h1 {
 	color: black;
-	mix-blend-mode: normal;
 }
 
 .project-section {

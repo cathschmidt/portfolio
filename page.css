@@ -136,7 +136,7 @@ figcaption {
 		margin-top: 15vw;
 	}
 
-	.pictures img {
+	.pictures * {
 		max-height: 60vh;
 	}
 
@@ -172,7 +172,11 @@ figcaption {
 	}
 
 	.slides {
-		height: 60vh;
+		height: 62vh;
+	}
+	
+	.pictures * {
+		max-height: 60vh;
 	}
 
 	#info-d {
